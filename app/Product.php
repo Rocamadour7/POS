@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    protected $fillable = [
+        'name',
+        'description',
+        'quantity',
+        'price'
+    ];
+
     public function setNameAttribute($name)
     {
         $name = trim($name);
