@@ -19,8 +19,8 @@
         <div>
             <a style="margin: 19px;" href="{{ route('products.create')}}" class="btn btn-primary">{{ __('messages.newProduct') }}</a>
         </div>
-        <table class="table table-striped">
-            <thead>
+        <table class="table table-striped table-hover">
+            <thead class="thead-light">
                 <tr>
                     <td>{{ __('messages.id') }}</td>
                     <td>{{ __('messages.name') }}</td>

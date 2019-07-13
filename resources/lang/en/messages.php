@@ -32,4 +32,6 @@ return [
     'update'            => 'Update',
     'updateAProduct'    => 'Update a product',
     'addAProduct'       => 'Add a product',
+    'home'              => 'Home',
+    'total'             => 'Total',
 ];

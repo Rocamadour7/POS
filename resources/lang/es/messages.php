@@ -32,5 +32,6 @@ return [
     'update'            => 'Actualizar',
     'updateAProduct'    => 'Actualiza un producto',
     'addAProduct'       => 'Agregar un producto',
-    
+    'home'              => 'Inicio',
+    'total'             => 'Total',
 ];
