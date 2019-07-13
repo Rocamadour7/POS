@@ -29,7 +29,7 @@ class Product extends Model
 
     public function getPriceAttribute($price)
     {
-        return $price / 100;
+        return number_format($price / 100, 2);
     }
 
     public function setPriceAttribute($price)

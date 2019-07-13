@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
 
 class ProductController extends Controller
 {
@@ -51,7 +52,7 @@ class ProductController extends Controller
 
         $product->save();
 
-        return redirect('/products')->with('success', 'Product saved!');
+        return redirect('/products')->with('success', __('messages.productSaved'));
     }
 
     /**
@@ -74,7 +75,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
-        return view('products.edit', compact('products'));
+        return view('products.edit', compact('product'));
     }
 
     /**
@@ -100,7 +101,7 @@ class ProductController extends Controller
 
         $product->save();
 
-        return redirect('/products')->with('success', 'Product updated!');
+        return redirect('/products')->with('success', __('messages.productUpdated'));
     }
 
     /**
@@ -114,6 +115,6 @@ class ProductController extends Controller
         $product = Product::find($id);
         $product->delete();
 
-        return redirect('/products')->with('success', 'Product deleted!');
+        return redirect('/products')->with('success', __('messages.productDeleted'));
     }
 }
