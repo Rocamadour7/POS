@@ -32,6 +32,9 @@ return [
     'update'            => 'Update',
     'updateAProduct'    => 'Update a product',
     'addAProduct'       => 'Add a product',
+    'removeAProduct'    => 'Remove a product',
     'home'              => 'Home',
     'total'             => 'Total',
+    'pleaseSelect'      => 'Please select...',
+    'close'             => 'Close',
 ];

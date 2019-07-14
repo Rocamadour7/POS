@@ -12,7 +12,7 @@ th:nth-child(2), td:nth-child(2) {
 }
 
 th:nth-child(3), td:nth-child(3) {
-    width: 50%;
+    width: 47%;
 }
 
 th:nth-child(4), td:nth-child(4) {
@@ -31,6 +31,17 @@ th:nth-child(6), td:nth-child(6) {
     font-weight: bold;
 }
 
+th:nth-child(7), td:nth-child(7) {
+    width: 3%;
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
+
+td:nth-child(7) {
+    cursor: pointer;
+}
+
 tbody tr {
     line-height: 2em;
 }
@@ -44,3 +55,28 @@ tbody tr {
 .actions {
     height: 80vh;
 }
+
+.buttonDiv {
+    height: 50%;
+}
+
+.buttonDiv button, .buttonDiv a {
+    margin-top: 25%;
+    height: 50%;
+}
+
+.buttonDiv a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quantity::-webkit-inner-spin-button,
+    #quantity::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Product;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +13,10 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+
+    $products = Product::all();
+
+    return view('index', compact('products'));
 });
 
 Route::resource('products', 'ProductController');

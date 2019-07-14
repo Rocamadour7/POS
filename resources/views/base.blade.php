@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    @yield('modals')
     <div class="container-fluid">
         @yield('main')
     </div>
